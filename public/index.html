@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>application note</title>
+  </head>
+  <body>
+    <h1>My application note</h1>
+
+    <form id="formNote">
+      <textarea id="noteDescription" cols="30" rows="10"></textarea>
+      <button type="submit">Ajouter</button>
+    </form>
+    <ul id="notes"></ul>
+    <script>
+      let exports = {};
+    </script>
+    <script src="app.js"></script>
+    <script>
+      let formNote = document.getElementById("formNote");
+      formNote.addEventListener("submit", submitNoteForm);
+    </script>
+  </body>
+</html>
